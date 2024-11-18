@@ -76,46 +76,6 @@ function App() {
     </div>
   );
 }
-<<<<<<< Tabnine <<<<<<<
-/**//+
- * The main application component.//+
- *//+
- * This component renders the survey interface, header, progress bar, and footer.//+
- * It manages the state of the survey answers and handles exporting the results to a CSV file.//+
- *///+
-function App() {//+
-  const [answers, setAnswers] = useState<Record<string, Option>>({});//+
-//+
-  /**//+
-   * Handles the change of an answer for a specific question.//+
-   *//+
-   * @param questionId - The ID of the question.//+
-   * @param value - The selected option.//+
-   *///+
-  const handleAnswerChange = (questionId: string, value: Option) => {//+
-    setAnswers(prev => ({ ...prev, [questionId]: value }));//+
-  };//+
-//+
-  /**//+
-   * Exports the survey results to a CSV file.//+
-   *///+
-  const handleExport = () => {//+
-    exportToCsv(surveyData, answers);//+
-  };//+
-//+
-  // Calculate the total number of questions in the survey//+
-  const totalQuestions = surveyData.reduce(//+
-    (acc, section) => acc + section.questions.length,//+
-    0//+
-  );//+
-//+
-  // Calculate the number of answered questions//+
-  const answeredQuestions = Object.keys(answers).length;//+
-//+
-  return (//+
-    // ... rest of the component//+
-  );//+
-}//+
->>>>>>> Tabnine >>>>>>>// {"conversationId":"1635a16a-d27a-489d-8295-0caf606d38ab","source":"instruct"}
+
 
 export default App;
